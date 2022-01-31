@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body  {
+                height: auto;
+                margin: 0%;
+            }
+
+            header h1 {
+                background-color:darkorange;
+                margin: 0%;
+                padding: 20px;
+                text-align: center;
+            }
+
+            #Navigate {
+                position: sticky;
+                top: 0%;
+                z-index: 1;
+            }
+
+            .Menu {
+                margin: 0%;
+                background-color:rgba(0,0,0,0.5);
+            }
+
+            .Menu li a {
+                color:black;
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            .Menu li {
+                padding: 10px;
+                display: inline-block;
+            }
+
+            .Menu li:hover {
+                background-color: rgba(37, 29, 29, 0.6);
+ 
+            }
+
+            .Menu li:nth-child(2):hover #dd1, .Menu li:nth-child(3):hover #dd2 {
+              display: block;  
+            }
+
+            #dd1, #dd2 {
+                position: absolute;
+                width: auto;
+                max-width: 150px;
+                display: none;
+                top: 40px;
+                background-color: whitesmoke;
+                padding: 0%;
+            }
+
+            #dd1 li, #dd2 li {
+                display: block;
+            }
+
+            #dd1 li:hover, #dd2 li:hover {
+                background-color: steelblue;
+                padding:5px;
+            }
+
+            #dd1 li a:hover, #dd2 li a:hover {
+                background-color: steelblue;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>
+            Demo of Dropdown
+        </h1>
+        <nav id="Navigate">
+            <ul class="Menu">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a>
+                    <ul id="dd1">
+                        <li><a href="#">DD_Link_1</a></li>
+                        <li><a href="#">DD_Link_2</a></li>
+                        <li><a href="#">DD_Link_3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link3</a>
+                    <ul id="dd2">
+                        <li><a href="#">DD_Link_1</a></li>
+                        <li><a href="#">DD_Link_2</a></li>
+                        <li><a href="#">DD_Link_3</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            </nav>
+        </header>    
+    </body>
+</html>
